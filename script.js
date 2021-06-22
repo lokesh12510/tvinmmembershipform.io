@@ -91,7 +91,7 @@ function GeneratePdf() {
                                 </div>
 
                                 <div class="col-5 mb-4">
-                                    <h6 class="value">${myForm[0]}</h6>
+                                    <h6 class="value">${myForm[1]}</h6>
                                 </div>
 
                                 <div class="col-4 mb-4">
@@ -101,7 +101,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[1]}</h6>
+                                    <h6>${myForm[2]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Blood Group</h6>
@@ -110,7 +110,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[2]}</h6>
+                                    <h6>${myForm[3]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Gender</h6>
@@ -119,7 +119,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[3]}</h6>
+                                    <h6>${myForm[4]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Father's Name</h6>
@@ -128,7 +128,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[4]}</h6>
+                                    <h6>${myForm[5]}</h6>
                                 </div>
 
                                 <div class="col-4 mb-4">
@@ -138,7 +138,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[5]}</h6>
+                                    <h6>${myForm[6]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Address</h6>
@@ -147,7 +147,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6 class="address">${myForm[6]}</h6>
+                                    <h6 class="address">${myForm[7]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Contact Number</h6>
@@ -156,7 +156,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[7]}</h6>
+                                    <h6>${myForm[8]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Aadhar Number</h6>
@@ -165,7 +165,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[8]}</h6>
+                                    <h6>${myForm[9]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Email Id</h6>
@@ -174,7 +174,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6 class="email-data">${myForm[9]}</h6>
+                                    <h6 class="email-data">${myForm[10]}</h6>
                                 </div>
                                 <div class="col-4 mb-4">
                                     <h6 class="key">Position</h6>
@@ -183,7 +183,7 @@ function GeneratePdf() {
                                     <h6>:</h6>
                                 </div>
                                 <div class="col-5 mb-4">
-                                    <h6>${myForm[10]}</h6>
+                                    <h6>${myForm[11]}</h6>
                                 </div>
                             </div>
                         </div>
