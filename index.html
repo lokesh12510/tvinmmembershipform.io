@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"
-        rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <!-- Html2Pdf -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
-        integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
-        crossorigin="anonymous">
-        </script>
+    <script src="html2pdf.bundle.min.js">
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
 </head>
@@ -24,32 +20,33 @@
     <section class="section">
         <div class="container pad">
             <form id="form-doc" action="" class="form" enctype="text/plain">
-                <h3 class="mb-2 mt-4 text-center"> <b>TVINM </b></h3>
-                <h3 class="mb-5  text-center"> Member Details Form</h3>
+                <h4 class="mb-3 mt-4 text-center text-capitalize mandram_name"> <b>Thambatty Vivekanandar Illaignar
+                        narpani
+                        mandram</b></h4>
+                <h3 class="mb-5 text-center lead"> Membership Details Form</h3>
                 <div class="row text-center">
-                    <div class="col-12 mb-5 mx-auto position-relative">
-                        <label for="formFile" class="imgLabel">
-                            <img id="liveimg" src="" alt="">
-                            <div class="camera-icon">
-                                <img src="camera.png" alt="">
+                    <div class="col-12 mb-5 mx-auto ">
+                        <label for="formFile" class="imgLabel position-relative">
+                            <div class="innerImg">
+                                <img id="liveimg" class="selectImg" src="profile-default.png" alt="">
                             </div>
                         </label>
                         <input class="form-control d-none" accept="image/*" name="image" onchange="loadFile(event)"
                             type="file" id="formFile">
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="name" placeholder="Name">
                             <label for="name">Name</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="date" class="form-control" id="dob" placeholder="DOB">
                             <label for="dob">DOB</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectGrid"
                                 aria-label="Floating label select example">
@@ -61,7 +58,7 @@
                             <label for="floatingSelectGrid">Select Blood Group</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectGrid"
                                 aria-label="Floating label select example">
@@ -71,45 +68,45 @@
                             <label for="floatingSelectGrid">Select Gender</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="father-name" placeholder="Father's name">
                             <label for="father-name">Father's name</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="text" class="form-control" id="mother-name" placeholder="Mother's name">
                             <label for="mother-name">Mother's name</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                 style="height: 100px" maxlength="100"></textarea>
                             <label for="floatingTextarea2">Address</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="number" class="form-control" id="phone" placeholder="Contact Number">
                             <label for="phone">Contact Number</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="number" class="form-control" id="aadhar" placeholder="Aadhar Number">
                             <label for="aadhar">Aadhar Number</label>
                         </div>
                     </div>
-                    <div class="col-12 mb-4 mx-auto">
+                    <div class="col-12  mx-auto">
                         <div class="form-floating">
                             <input type="email" class="form-control" id="email" placeholder="Email">
                             <label for="email">Email ID</label>
                         </div>
                     </div>
 
-                    <div class="col-12 mb-5 mx-auto">
+                    <div class="col-12 mb-4 mx-auto">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelectGrid"
                                 aria-label="Floating label select example">
@@ -140,11 +137,20 @@
                 <div class="modal-body position-relative">
                     <div class="row pdf-btn align-items-center">
                         <div class="col-12">
-                            <h6 class="text-center">Successfully submitted click generate to download pdf</h6>
+                            <div class="success-animation">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h6 class="text-center text-color">Successfully submitted click generate to download pdf
+                            </h6>
                         </div>
                         <div class="col-12 mt-5 ">
                             <button type="button" class="btn btn-primary gpdf w-100" onclick="GeneratePdf();"
-                                value="GeneratePdf" data-bs-dismiss="modal">Generate PDF</button>
+                                value="GeneratePdf">Generate PDF</button>
 
                         </div>
                     </div>
@@ -155,9 +161,8 @@
 
     <script src="script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-        </script>
+    <script src="bootstrap.bundle.min.js">
+    </script>
 </body>
 
 </html>

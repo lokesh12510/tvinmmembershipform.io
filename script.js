@@ -6,6 +6,7 @@ const phone = document.querySelector("#phone");
 const image = document.querySelector("#formFile");
 const box = document.querySelector("#templates");
 const img = document.querySelector("#images");
+var modalToggle = document.getElementById("staticBackdrop");
 let imgSrc;
 
 let loadFile = function (event) {
@@ -206,6 +207,7 @@ function GeneratePdf() {
   html2pdf(template, { html2canvas: { scale: 4 } });
   sessionStorage.clear();
   setTimeout(function () {
-    window.location.reload(1);
+    window.location.reload();
+    myModal.hide(modalToggle);
   }, 5000);
 }
