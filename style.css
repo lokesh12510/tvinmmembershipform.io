@@ -66,6 +66,8 @@ body {
 }
 
 .innerImg {
+  width: 120px;
+  height: 120px;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -165,9 +167,7 @@ textarea:-webkit-autofill:active {
 .gpdf {
   padding: 15px 20px;
 }
-.modal-dialog {
-  margin: 1rem;
-}
+
 /* template */
 
 /* template */

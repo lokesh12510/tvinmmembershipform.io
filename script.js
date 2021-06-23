@@ -200,8 +200,10 @@ function GeneratePdf() {
                             </div>
                         </div>
                     </footer>
-                </div>
-            </div>
+                    </div>
+                    
+                    </div>
+                    <div class="bg-bottom"></div>
         </div>
       `;
   html2pdf(template, { html2canvas: { scale: 4 } });

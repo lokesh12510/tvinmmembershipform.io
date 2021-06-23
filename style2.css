@@ -18,11 +18,14 @@ img {
   width: 100%;
   background: #fff;
   padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .page-header {
   text-transform: uppercase;
   /* letter-spacing: 5px; */
+  color: #0c2b6e;
 }
 
 header {
@@ -49,7 +52,7 @@ header {
 .render-field {
   overflow: hidden;
   position: relative;
-  background: url("layout.svg") no-repeat;
+  background: url("bg-top.svg") no-repeat;
   background-size: contain;
   background-position: top;
 }
@@ -95,6 +98,20 @@ header {
   padding: 20px 60px;
   position: relative;
 }
+.bg-bottom {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  background: url("Frame1.png") no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  border: none;
+}
+
+footer {
+  margin-bottom: 70px;
+}
 .address {
   line-height: 25px;
   word-break: break-all;
@@ -117,5 +134,13 @@ header {
 }
 
 .section-pad {
-  padding: 10px 0 150px 0;
+  padding: 10px 0 120px 0;
+}
+
+.bg-bottom {
+  width: 100%;
+  height: 200px;
+}
+.bg-bottom img {
+  object-fit: none;
 }
