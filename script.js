@@ -29,8 +29,6 @@ document.addEventListener("DOMContentLoaded", sessionStorage.clear());
 
 formData.addEventListener("submit", function (e) {
   e.preventDefault();
-
-  //   document.querySelector(".gpdf").classList.add("d-block");
   const formArr = [];
   for (let i = 0; i < e.target.length - 1; i++) {
     formArr.push(e.target[i].value);
