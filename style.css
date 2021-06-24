@@ -9,7 +9,6 @@ img {
 }
 
 body {
-  font-size: 16px;
   color: rgb(51, 51, 51);
   min-height: 100vh;
 }
@@ -32,12 +31,16 @@ body {
   display: grid;
   place-items: center;
   padding: 40px;
+  font-size: 16px;
 }
 
 .container {
-  max-width: 600px;
   background: #fff;
   border-radius: 10px;
+}
+
+.form-container {
+  max-width: 600px;
 }
 
 .pad {
@@ -49,8 +52,6 @@ body {
 }
 
 .imgLabel {
-  width: 120px;
-  height: 120px;
   border: 1px dashed rgb(97, 32, 218);
   background: url("profile-default.png") no-repeat;
   background-size: cover;

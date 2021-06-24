@@ -51,7 +51,7 @@ function sessionStart(arr) {
 function GeneratePdf() {
   let myForm = JSON.parse(localStorage.myForm);
   const template = `
-        <div class="contain" id="templates">
+        
             <div class="render-field">
 
                 <header>
@@ -59,9 +59,9 @@ function GeneratePdf() {
                         <div class="logo_tvinm">
                             <img src="logo.png" alt="">
                         </div>
-                        <div class="header-data">
-                            <h4 class="page-header mb-2 fw-bold">Thambatty Vivekanandar Illaignar narpani mandram</h4>
-                            <h6>Nundhala Post, The Nilgiris 643003</h6>
+                        <div class="header-title">
+                            <p class="page-header mb-2 fw-bold">Thambatty <br/> Vivekanandar Illaignar narpani mandram</p>
+                            <p>Nundhala Post, The Nilgiris 643003</p>
 
                         </div>
                         <div class="logo_nyk">
@@ -69,143 +69,140 @@ function GeneratePdf() {
                         </div>
                     </div>
                 </header>
-                <div class="bg"></div>
-                <div class="main-template" id="templates">
-                    <div class="title pt-2 pb-5">
-                        <h2 class="text-center fw-bold">
+                <div class="header-bg"></div>
+                <div class="template-body">
+                    <div class="body-title">
+                        <p class="text-center fw-bold">
                             Member Details
-                        </h2>
+                        </p>
                     </div>
                     <div class="profile-img">
-                        <img class="p-img" src="${localStorage.getItem(
-                          "img"
-                        )}" alt="">
+                        <img src="${localStorage.getItem("img")}" alt="">
                     </div>
-                    <div class="row section-pad">
-                        <div class="col-11">
+                    <div class="row">
+                        <div class="col-12">
                             <div class="row details">
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Name</h6>
+                                <div class="col-4">
+                                    <p class="key">Name</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
 
-                                <div class="col-5 mb-4">
-                                    <h6 class="value">${myForm[1]}</h6>
+                                <div class="col-5">
+                                    <p class="value">${myForm[1]}</p>
                                 </div>
 
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Date of Birth</h6>
+                                <div class="col-4">
+                                    <p class="key">Date of Birth</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[2]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[2]}</p>
                                 </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Blood Group</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>:</h6>
-                                </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[3]}</h6>
-                                </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Gender</h6>
+                                <div class="col-4">
+                                    <p class="key">Blood Group</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[4]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[3]}</p>
                                 </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Father's Name</h6>
+                                <div class="col-4">
+                                    <p class="key">Gender</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[5]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[4]}</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="key">Father's Name</p>
+                                </div>
+                                <div class="col-1">
+                                    <p>:</p>
+                                </div>
+                                <div class="col-5">
+                                    <p>${myForm[5]}</p>
                                 </div>
 
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Mother's Name</h6>
+                                <div class="col-4">
+                                    <p class="key">Mother's Name</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[6]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[6]}</p>
                                 </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Address</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>:</h6>
-                                </div>
-                                <div class="col-5 mb-4">
-                                    <h6 class="address">${myForm[7]}</h6>
-                                </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Contact Number</h6>
+                                <div class="col-4">
+                                    <p class="key">Address</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[8]}</h6>
+                                <div class="col-5">
+                                    <p class="address">${myForm[7]}</p>
                                 </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Aadhar Number</h6>
-                                </div>
-                                <div class="col-1">
-                                    <h6>:</h6>
-                                </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[9]}</h6>
-                                </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Email Id</h6>
+                                <div class="col-4">
+                                    <p class="key">Contact Number</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6 class="email-data">${myForm[10]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[8]}</p>
                                 </div>
-                                <div class="col-4 mb-4">
-                                    <h6 class="key">Position</h6>
+                                <div class="col-4">
+                                    <p class="key">Aadhar Number</p>
                                 </div>
                                 <div class="col-1">
-                                    <h6>:</h6>
+                                    <p>:</p>
                                 </div>
-                                <div class="col-5 mb-4">
-                                    <h6>${myForm[11]}</h6>
+                                <div class="col-5">
+                                    <p>${myForm[9]}</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="key">Email Id</p>
+                                </div>
+                                <div class="col-1">
+                                    <p>:</p>
+                                </div>
+                                <div class="col-5">
+                                    <p class="email-data">${myForm[10]}</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="key">Position</p>
+                                </div>
+                                <div class="col-1">
+                                    <p>:</p>
+                                </div>
+                                <div class="col-5">
+                                    <p>${myForm[11]}</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     <footer>
 
                         <div class="row justify-content-between">
-                            <div class="col-3">
-                                <h6 class="fw-bold">President Sign</h6>
-                            </div>
-                            <div class="col-3 text-end">
-                                <h6 class="fw-bold">Member Sign</h6>
+
+                            <div class="col-12 text-end">
+                                <p class="fw-bold">Member Signature</p>
                             </div>
                         </div>
+                        <div class="bg-bottom"></div>
                     </footer>
-                    </div>
                     
                     </div>
-                    <div class="bg-bottom"></div>
-        </div>
-      `;
+                    
+                    `;
+
   html2pdf(template, { html2canvas: { scale: 4 } });
   sessionStorage.clear();
   setTimeout(function () {
