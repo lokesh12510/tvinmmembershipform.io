@@ -7,6 +7,7 @@
 <path d="M-19 139C230.5 -149 1335.5 169 1326.5 66C1326.5 40.5 1327.54 17.8941 1326.5 -4.66064H-19V139Z" fill="#094B89"/>
 </g>
 </g>
+<rect x="0.5" y="1.1709" width="1300" height="191.829" stroke="white"/>
 <defs>
 <filter id="filter0_d" x="-23" y="-4.66064" width="1353.96" height="151.661" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -18,7 +19,6 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
 <clipPath id="clip0">
-<rect width="1301" height="192.829" fill="white" transform="translate(0 0.670898)"/>
 </clipPath>
 </defs>
 </svg>

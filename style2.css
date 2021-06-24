@@ -38,6 +38,7 @@ header {
   margin: 0 auto;
   text-align: center;
   z-index: 2;
+  position: relative;
 }
 
 .header-bg {
@@ -46,7 +47,7 @@ header {
   position: absolute;
   top: -1px;
   right: 0;
-  background: url("bg-top.svg") no-repeat;
+  background: url("bg-top.png") no-repeat;
   background-size: cover;
   z-index: 1;
 }
