@@ -201,7 +201,17 @@ function GeneratePdf() {
                     
                     `;
 
-  html2pdf(template, { html2canvas: { scale: 4 } });
+  //   html2pdf(template, { html2canvas: { scale: 4 } });
+  //   var element = document.getElementById("element-to-print");
+
+  html2pdf(template, {
+    margin: 0.3,
+    filename: `${myForm[1]}.pdf`,
+    image: { type: "jpeg", quality: 1 },
+    html2canvas: { scale: 4, logging: true, dpi: 300, letterRendering: true },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+  });
+
   sessionStorage.clear();
   setTimeout(function () {
     window.location.reload();
