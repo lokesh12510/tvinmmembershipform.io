@@ -59,7 +59,7 @@ function GeneratePdf() {
                         </div>
                         <div class="header-title">
                             <p class="page-header mb-2 fw-bold">Thambatty <br/> Vivekanandar Illaignar narpani mandram</p>
-                            <p>Nundhala Post, The Nilgiris 643003</p>
+                            <p>Nunthala Post, The Nilgiris 643003</p>
 
                         </div>
                         <div class="logo_nyk">
