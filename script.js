@@ -205,7 +205,7 @@ function GeneratePdf() {
   //   var element = document.getElementById("element-to-print");
 
   html2pdf(template, {
-    margin: 0.3,
+    margin: 0,
     filename: `${myForm[1]}.pdf`,
     image: { type: "jpeg", quality: 1 },
     html2canvas: { scale: 4, logging: true, dpi: 300, letterRendering: true },
